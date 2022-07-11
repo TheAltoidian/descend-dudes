@@ -1,7 +1,5 @@
-// from Math import
-
 var fall = ['Fall', 'Decline', 'Decrease', 'Dip', 'Drop', 'Plunge', 'Dive', 'Plummet', 'Tumble', 'Downward Slope', 'Nosedive', 'Topple', 'Collapse', 'Plunge', 'Slide', 'Move Downwards'];
-var guys = ['Beings', 'Bodies', 'Characters', 'Creatures', 'Human Beings', 'Humans', 'Individuals', 'Mortals', 'Parties', 'People', 'Specimens', 'Things', 'Fellas', 'Dudes'];
+var guys = ['Beings', 'Bodies', 'Characters', 'Creatures', 'Human Beings', 'Humans', 'Individuals', 'Mortals', 'Parties', 'People', 'Specimens', 'Things', 'Fellas', 'Dudes', 'Pals'];
 
 let fallRand = function () {
     return Math.floor(Math.random() * (fall.length - 1))
