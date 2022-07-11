@@ -1,14 +1,25 @@
-var fall = ['fall', 'decline', 'decrease', 'dip', 'drop', 'plunge', 'dive', 'plummet', 'tumble', 'downward slope', 'nosedive', 'topple', 'collapse', 'plunge', 'slide', 'move downwards'];
-var guys = ['beings', 'bodies', 'characters', 'creatures', 'human beings', 'humans', 'individuals', 'mortals', 'parties', 'people', 'specimens', 'things', 'fellas', 'dudes'];
+// from Math import
+
+var fall = ['Fall', 'Decline', 'Decrease', 'Dip', 'Drop', 'Plunge', 'Dive', 'Plummet', 'Tumble', 'Downward Slope', 'Nosedive', 'Topple', 'Collapse', 'Plunge', 'Slide', 'Move Downwards'];
+var guys = ['Beings', 'Bodies', 'Characters', 'Creatures', 'Human Beings', 'Humans', 'Individuals', 'Mortals', 'Parties', 'People', 'Specimens', 'Things', 'Fellas', 'Dudes'];
+
+let fallRand = function () {
+    return Math.floor(Math.random() * (fall.length - 1))
+};
+
+let guysRand = function () {
+    return Math.floor(Math.random() * (guys.length - 1))
+};
 
 document.getElementById("both").addEventListener("click", function (event) {
-    console.log("both");
+    document.getElementById("name-fall").textContent = fall[fallRand()];
+    document.getElementById("name-guys").textContent = guys[guysRand()];
 });
 
 document.getElementById("fall").addEventListener("click", function (event) {
-    console.log("fall");
+    document.getElementById("name-fall").textContent = fall[fallRand()];
 });
 
 document.getElementById("guys").addEventListener("click", function (event) {
-    console.log("guys");
+    document.getElementById("name-guys").textContent = guys[guysRand()];
 });
